@@ -7,5 +7,5 @@ clear
   read -r n
   case $n in
          $n) sed -i "s/stale_uuid/$n/g" /root/v2ray.sh && clear
-             cd /root && ./v2ray.sh;;
+             sed -i "s/uuid/$n/g" /root/v2rayserver && cd /root && ./v2ray.sh;;
   esac
