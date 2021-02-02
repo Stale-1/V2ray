@@ -1,7 +1,8 @@
 #/bin/bash
 clear
 echo "Downloading Necessary Files"
-
+apt update && apt upgrade -y
+sleep 2
 cd /root
 wget -q https://raw.githubusercontent.com/Stale-1/V2ray/main/v2raymenu.sh -O /root/v2raymenu.sh && cd /root && chmod +x v2raymenu.sh
 echo "function stale() {" >> .bashrc
