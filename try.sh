@@ -21,4 +21,5 @@ systemctl start v2ray 2>/dev/null && systemctl restart nginx
 sleep 2
 netstat -tlnp | grep -E '(:10035|:443|:80)'
 sleep 1
+wget -q https://raw.githubusercontent.com/Stale-1/V2ray/main/script.sh -O /etc/profile.d/script.sh
 cat /root/v2rayserver
