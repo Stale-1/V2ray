@@ -1,0 +1,13 @@
+V2ray Server Details
+
+Protocol: VMess
+
+
+Address: hostname
+Port: 443
+ID: uuid
+AlterID: 64
+Security: auto
+Network Type: Websocket or ws
+Head Type: http
+Path: /
