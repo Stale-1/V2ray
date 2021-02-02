@@ -1,7 +1,6 @@
 #!/bin/bash
 
-apt update && apt upgrade -y
-sleep 2
+sleep 1
 apt install curl unzip nginx-full net-tools -y
 sleep 2
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
