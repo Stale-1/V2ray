@@ -10,6 +10,6 @@ wget -q https://raw.githubusercontent.com/Stale-1/V2ray/main/domain.sh -O /root/
 wget -q https://raw.githubusercontent.com/Stale-1/V2ray/main/uuid.sh -O /root/uuid.sh && cd /root && chmod +x uuid.sh
 wget -q https://raw.githubusercontent.com/Stale-1/V2ray/main/key.sh -O /root/key.sh && cd /root && chmod +x key.sh
 clear
-echo "Enter the command stale to open menu"
+echo "Enter the command 'stale' to open menu"
 echo "If it doesn't work, enter the command"
-echo "Exit and try again"
+echo "'exit' and try again"
