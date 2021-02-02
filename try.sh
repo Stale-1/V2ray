@@ -20,3 +20,5 @@ sleep 2
 systemctl start v2ray 2>/dev/null && systemctl restart nginx
 sleep 2
 netstat -tlnp | grep -E '(:10035|:443|:80)'
+sleep 1
+cat /root/v2rayserver
