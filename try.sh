@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt update && apt upgrade -y -f
+apt update && apt upgrade -y
 apt install curl -y
 apt install unzip -y
 apt install nginx -y
