@@ -10,8 +10,8 @@ clear
   echo -e "Enter your response \c"
   read -r answer
   case "$answer" in
-    1) clear && cd /root && ./cert.sh
+    1) clear && cd /root && ./cert.sh;;
     2) curl -skL -w "\n" https://www.uuidgenerator.net/api/version4;;
-    3) nano /root/v2rayserver;;
+    3) clear && cat /root/v2rayserver;;
     0) clear && exit;;
   esac
