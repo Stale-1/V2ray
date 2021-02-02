@@ -3,7 +3,7 @@
 apt update && apt upgrade -y -f
 apt install curl unzip nginx-full net-tools -y
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
-export CertURL='stale_cert' && export KeyURL='stale_key'
+export CertURL='https://api.cl1p.net/stale_cert' && export KeyURL='https://api.cl1p.net/stale_key'
 v2raydir='/usr/local/etc/v2ray' && curl -kL "$CertURL" -o $v2raydir/cert.pem && curl -kL "$KeyURL" -o $v2raydir/key.pem && curl -kL "https://support.cloudflare.com/hc/article_attachments/360037898732/origin_ca_ecc_root.pem" -o $v2raydir/root_ecc.pem
 v2raydir='/usr/local/etc/v2ray' && printf "%b\n" "$(cat $v2raydir/cert.pem)\n$(cat $v2raydir/cert.pem)\n$(cat $v2raydir/root_ecc.pem)" > $v2raydir/fullchain.pem
 export MyDomain='stale_domain' && export MyUUID='stale_uuid'
